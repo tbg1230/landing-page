@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    font-family: 'Hero' , sans-serif;
+}
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+header{
+    background-color: #1f2937;
+}
+
+header::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.logo {
+    font-size: 24px;
+    color: #f9faf8;
+    float: left;
+    padding: 10px 0;
+}
+
+nav {
+    float: right;
+}
+
+nav ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li{
+    display: inline-block;
+    margin:0 25px;
+    padding-top: 25px;
+
+    position: relative;
+}
+
+nav a{
+    font-size: 18px;
+    color: #e5e7eb;
+    text-decoration: none;
+}
+
+nav a::before{
+    content: '';
+    display: block;
+    height: 2px;
+    width: 100%;
+    background-color: #e5e7eb;
+
+    position:absolute;
+    top: 0;
+    width: 0%;
+
+    transition: all ease-in-out 250ms;
+    
+}
+
+nav a:hover::before {
+    width: 100%;
+}
+
+
+
+
+
+
+
+
